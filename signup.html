@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | Edu Consultancy</title>
+  <link rel="stylesheet" href="C:\java B59\counsultancy website\consultancy\Style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+   
+     
+    </div>
+   
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="colleges.html">Colleges</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Signup Form Section -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <h1>Create Your Account</h1>
+      <p>Sign up to get personalized B.Tech guidance.</p>
+
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="FULL NAME" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="MOBILE NO" required>
+        <input type="text" id="city" placeholder="City " required>
+        <input type="text" id="state" placeholder="state" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="reenter-password" id="reenter-password" placeholder="RE-ENTER PASSWORD" required>
+
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="auth-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Edu Consultancy | All Rights Reserved</p>
+  </footer>
+
+  <script src="C:\java B59\counsultancy website\consultancy\carosule.js"></script>
+  <script>
+    // Temporary (for demo only)
+    const form = document.getElementById('signupForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Signup Successful! (Firebase connection coming soon)');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

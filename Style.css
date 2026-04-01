@@ -1,0 +1,568 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2573d8;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  display:flex;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.navbar .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color:#ffffff;    
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+  color: #090909;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #004aad, #007bff);
+  color:#ffffff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ffcc00;
+  color: #004aad;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004aad;
+  color: #004aad;
+  padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ---------- Founder Section Styles ---------- */
+
+.founder-section {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 1rem;
+}
+
+.founder-photo img {
+  width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.founder-info {
+  flex: 1;
+}
+
+.founder-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.founder-info h2 {
+  color: #0b5ed7;
+  margin-bottom: 20px;
+}
+
+.founder-info p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive (Mobile View) */
+@media (max-width: 768px) {
+  .founder-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-photo img {
+    width: 70%;
+    max-width: 300px;
+  }
+}
+
+/* ---------- Colleges Page Styles ---------- */
+
+.page-title {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: linear-gradient(to right, #004aad, #007bff);
+  color: white;
+}
+
+.page-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 1.1rem;
+}
+
+.college-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 60px;
+}
+
+.college-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+}
+
+.college-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.college-card h3 {
+  color: #004aad;
+  font-size: 1.3rem;
+  margin: 15px;
+}
+
+.college-card p {
+  margin: 0 15px 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.college-card .btn {
+  display: inline-block;
+  background: #004aad;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin: 0 15px 20px;
+  transition: background 0.3s ease;
+}
+
+.college-card .btn:hover {
+  background: #ffcc00;
+  color: #004aad;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .college-list {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .page-title h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ---------- College Sections ---------- */
+.college-section {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.college-section h2 {
+  color: #004aad;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.college-section p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* College Carousel */
+.college-carousel-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.college-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.college-carousel img {
+  width: 100%;
+  max-width: 300px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Hide scrollbar */
+.college-carousel::-webkit-scrollbar { display: none; }
+.college-carousel { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Scroll buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-btn.left { left: 5px; }
+.scroll-btn.right { right: 5px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .college-carousel img { max-width: 250px; }
+}
+
+/* ---------- Admission Scrolling Bar ---------- */
+.admission-bar {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: #fff;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+
+/* Animation for scrolling text */
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Optional: Hover pause effect */
+.admission-bar:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+/* ---------- Contact Page ---------- */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.contact-section h1 {
+  color: #004aad;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #007bff;
+}
+
+/* Contact Info */
+.contact-info h3 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Social Media Icons */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004aad;
+  color: white;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+/* ----- Mobile View Fix (for screens below 768px) ----- */
+@media (max-width: 768px) {
+
+  /* Make sure all sections fit properly */
+  section, div, img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Adjust hero or banner images */
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Fix any flex containers (like navbar, contact, etc.) */
+  .container, .contact-container, .college-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjust text sizes for mobile */
+  h1, h2, h3, p {
+    padding: 0 10px;
+  }
+
+  /* Ensure navbar or logo doesn’t overflow */
+  .navbar, .logo {
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Optional: remove unnecessary margins */
+  * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ---------- Auth Pages (Signup/Login) ---------- */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #e9edf3, #f1f4f7);
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.auth-container h1 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.auth-container p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.auth-container button {
+  width: 100%;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #003380;
+}
+
+.auth-link {
+  margin-top: 15px;
+}
+
+.auth-link a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Mobile View ---------- */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .auth-container input, .auth-container button {
+    font-size: 15px;
+  }
+}
